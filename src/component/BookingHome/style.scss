@@ -1,0 +1,17 @@
+
+.list-rentals-container
+{
+    min-height: calc(100vh);
+    .list-sort-selector {
+    margin-top: 20px;
+    display: block;
+    right: 0;
+    position: relative;
+    padding: 6px;
+    width: 140px;
+    font-size: 12px;
+    border-radius: 2px;
+    z-index: 20;
+    float: right;
+}
+}

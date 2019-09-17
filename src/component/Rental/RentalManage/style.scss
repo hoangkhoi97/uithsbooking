@@ -1,0 +1,97 @@
+
+.rental-history-container {
+    margin: 0 auto;
+    max-width: 928px;
+    padding-bottom: 40px;
+    max-height: 800px;
+    #rentalManageList::-webkit-scrollbar {
+        width: 3px;
+        background-color: #F5F5F5;
+    } 
+    #rentalManageList::-webkit-scrollbar-thumb {
+        background-color: #673AB7;
+    }
+    .rental-history-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .rental-history-content {
+        border-radius: 8px;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        overflow-y: scroll;
+        height: fit-content;
+        max-height: 600px;
+        a {
+            text-decoration: none;
+            color:#53525a;
+
+        }
+    
+    }
+}
+.rental-cell-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    .rental-cell-image{
+        padding: 8px 16px 8px 16px;
+        img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .rental-tile {
+        color:#53525a;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .rental-total-price{
+        margin-left: auto;
+        margin-right: 16px;
+        border-radius: 8px;
+        padding: 7px 7px 7px 7px;
+        
+    }
+    .rental-total-price > p {
+        text-align: center;
+        color: #53525a;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+}
+.user-rental-page {
+    min-height: calc(100vh - 40px)
+}
+.status-btn {
+    font-size: 12px !important;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-color: initial;
+    background-image: none;
+    font-weight: 400;
+    border: 1px solid;
+    padding: .5625rem 1rem;
+    font-size: .75rem;
+    line-height: 1.125;
+    border-radius: .25rem;
+    
+}
+.approved-status{
+    border-color: #17c671;
+    color: #17c671;
+}
+.pending-status {
+    border-color: #ffb400;
+    color: #ffb400;
+}
+.forbid-status {
+    border-color: #c4183c;
+    color: #c4183c;
+}

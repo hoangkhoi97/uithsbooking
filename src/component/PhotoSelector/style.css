@@ -1,0 +1,58 @@
+.square {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.photo-selector {
+    border-radius: 8px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F5F5;
+}
+
+.photo-selector:hover {
+    opacity: 0.9;
+}
+
+.photo-selector .corner-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.photo-selector .corner-btn img{ 
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+    border-radius: 50%;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.photo-selector .corner-btn:hover{
+    cursor: pointer;
+}
+
+.photo-selector input{
+    display: none;
+}
+
+.photo-selector label{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+    background-color: black;
+} 
+.image-avatar {
+    width: inherit;
+    height: inherit;
+}

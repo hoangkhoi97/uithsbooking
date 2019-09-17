@@ -1,0 +1,96 @@
+.booking-history-container {
+    margin: 0 auto;
+    max-width: 928px;
+    padding-bottom: 40px;
+    .booking-history-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .booking-history-content {
+        border-radius: 8px;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        height: fit-content;
+        a {
+            text-decoration: none;
+            color:#53525a;
+
+        }
+    
+    }
+}
+.booking-cell-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    .booking-cell-image{
+        padding: 8px 16px 8px 16px;
+        img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .rental-tile {
+        color:#53525a;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .booking-total-price{
+        padding: .4286rem .875rem;
+    font-size: .6875rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    border: 1px solid transparent;
+    -webkit-appearance: button;
+    }
+    .paid {
+        border-color: #17c671;
+        background-color: #17c671;
+    }
+    .pending {
+        background-color: red;
+    }
+    .booking-total-price > p {
+        text-align: center;
+        color: white;
+    }
+}
+.user-booking-history {
+    min-height: calc(100vh - 40px)
+}
+.status-btn {
+    font-size: 12px !important;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-color: initial;
+    background-image: none;
+    font-weight: 400;
+    border: 1px solid;
+    padding: .5625rem 1rem;
+    font-size: .75rem;
+    line-height: 1.125;
+    border-radius: .25rem;
+    
+}
+.rental-total-price {
+    margin-right: 20px;
+    margin-left: auto;
+}
+.approved-status{
+    border-color: #17c671;
+    color: #17c671;
+}
+.pending-status {
+    border-color: #ffb400;
+    color: #ffb400;
+}
+.forbid-status {
+    border-color: #c4183c;
+    color: #c4183c;
+}

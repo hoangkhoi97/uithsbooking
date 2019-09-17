@@ -1,0 +1,132 @@
+.list-sort-span{
+    position: relative;
+    right: 5px;
+    margin-top: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    @media screen and (max-width: 420px) {
+        display: none;
+    }
+}
+.list-sort-selector {
+    display: block;
+    right: 0;
+    position: relative;
+    margin: 0;
+    padding: 6px;
+    width: 110px;
+    font-size: 12px;
+    border-radius: 2px;
+    z-index: 20;
+    float: right;
+    // margin-top: 25px;
+}
+.list-sort-selector ul {
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    left: -1px;
+    border: 1px solid #D2D2D2;
+    border-top: 0;
+    box-sizing: content-box;
+}
+.list-sort-selector option {
+    width: 88%;
+    margin: 5px auto;
+    text-align: left;
+    padding: 0;
+    border-bottom: 0;
+    list-style: none;
+}
+.list-rentals-container {
+    min-height: calc(100vh - 65px);
+}
+
+.b {
+    margin-top: 30px;
+    width: 30%;
+}
+.people-select {
+    height: 73px;
+}
+.ravatar {
+    height: 50px;
+    width: 50px;
+    margin-left: -50px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+}
+.rname{
+    display:inline-block;
+    font-weight:bold;
+    margin-left:20px;
+    vertical-align: middle;
+}
+.rbutton{
+    display:inline-block;
+    float:right;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.bookingdetail{
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.paypalb
+{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+    .rbutton{
+        width: 70%!important;
+        display: block!important;
+        float: none!important;
+        margin-top: 20px!important;
+        margin-left: auto!important;
+        margin-right: auto !important;
+    }
+    .bookingdetail{
+        font-weight: bold;
+        padding-left: 20px!important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.block
+{
+    margin-top: 20px;
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.title
+{
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid;
+    border-image: conic-gradient(rgba(97,212,202,1) 2%, rgba(75,68,229,1) 98.3%) 1;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+.titletext
+{
+    font-size: 25px;
+    background-color: white;
+    padding: 0 10px;
+    margin-left:20px;
+}
+.titleicon
+{
+    margin-left:10px;
+    margin-right:20px;
+}
+

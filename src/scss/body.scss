@@ -1,0 +1,48 @@
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  word-spacing: 1px !important;
+  background: #FFFFFF ;
+}
+
+h2 {
+  //color: #0eb493;
+  //letter-spacing: 2px;
+  //font-size: 36px !important;
+  //margin-top: 20px;
+  //font-weight: bold;
+  //font-family: 'Roboto' , sans-serif;
+  //@media screen and (max-width: 367px ) {
+  //  margin-top: 50px;
+  //}
+  //@media screen and( min-width: 1600px) {
+  //  font-size: 28px !important;
+  //  margin-top: 100px;
+  //}
+}
+.f-left{ float: left;}
+.f-right{float: right;}
+
+@import 'header';
+@import 'main';
+@import "user";
+@import "support";
+@import "home";
+@import "box";
+@import "create_rent";
+@import "font-face";
+@import "sub_home";
+@import "contact";
+@import "rent_info";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

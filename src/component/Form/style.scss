@@ -1,0 +1,200 @@
+.react-datepicker-wrapper {
+    display: block !important;
+  }
+  
+  .react-datepicker__input-container {
+    display: block !important;
+  }
+  
+  .react-datepicker {
+    font-size: 1.3rem !important;
+  }
+  
+  .react-datepicker__header {
+    padding-top: 6px !important;
+  }
+  
+  .react-datepicker__month {
+    margin: 0.4em 1em;
+  }
+  
+  .react-datepicker__day-name,
+  .react-datepicker__day {
+    width: 1.9em;
+    line-height: 1.9em;
+    margin: 0.5rem !important;
+  }
+  
+  .react-datepicker__current-month {
+    font-size: 1.5rem !important;
+  }
+  
+  .react-datepicker__navigation {
+    top: 13px !important;
+    line-height: 1.7em;
+    border: 0.45em solid transparent;
+  }
+  
+  .react-datepicker__navigation--previous {
+    border-right-color: #ccc;
+    left: 1em;
+  }
+  
+  .react-datepicker__navigation--next {
+    border-left-color: #ccc;
+    right: 1em;
+  }
+
+.photo-selector-1 {
+  width: 290px !important;
+  height: 150px !important;
+    border-radius: 8px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F5F5;
+    padding: 0px;
+    float: right;
+    margin-bottom: 10px;
+
+}
+
+.photo-selector-1:hover {
+    opacity: 0.9;
+}
+
+.photo-selector-1 .corner-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.photo-selector-1 .corner-btn img{ 
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+    border-radius: 50%;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.photo-selector-1 .corner-btn:hover{
+    cursor: pointer;
+}
+
+.photo-selector-1 input{
+    display: none;
+}
+
+.photo-selector-1 label{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+    background-color: black;
+} 
+.image-avatar {
+    width: inherit;
+    height: inherit;
+}
+.custom-input {
+  width: 100%;
+  // margin-bottom: 50px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid  #D1C4E9;
+  padding-bottom: 5px;
+  font-size: 17px;
+  font-family: HiraKakuPro-W3;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-bottom-color:#00d8ff
+}
+.error-form {
+  border-color: red !important
+}
+.error-text{
+  font-size: 12px;
+  color: red;
+}
+.custom-textarea {
+  // margin-bottom: 50px;
+  outline: 0;
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  font-family: 'Josefin Sans', sans-serif;
+  border : 1px dashed #d1c4e9;
+  border-radius: .4em;    
+}
+.custom-textarea:focus  {
+  outline: none;
+  border-color:#00d8ff
+}
+.field-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 60px;
+  select {
+      height: 32px;
+  }
+}
+// .photo-selector {
+//   width: 280px !important;
+//   height: 280px !important;
+//   margin: auto;
+//   margin-bottom: 30px;
+// }
+.edit-profile-fields {
+  padding: 40px 120px 40px 120px
+}
+textarea {
+  resize: none;
+}
+.responsive {
+  width: 100px;
+  height: 100px;
+  .thumbnail {
+      width: 100px !important;
+      height: 100px !important;
+  }
+  .icon {
+      width: 30px !important;
+      height: 30px !important;
+  }
+}
+.image_picker {
+  margin-bottom: 24px;
+}
+.avatar-row-1 {
+  display: flex;
+}
+.avatar-row-2 {
+  display: flex;
+  .container-right-1 {
+    padding-right: 0px;
+  
+  }
+  .container-right {
+    .photo-selector{
+    float: right;
+    }
+  }
+
+}
+.photo-selector-container {
+  padding-left: 0px;
+}
+.image_picker {
+  overflow-y: scroll;
+  height: 300px;
+}
+.image_picker::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5;
+} 
+.image_picker::-webkit-scrollbar-thumb {
+  background-color: #673AB7;
+}

@@ -1,0 +1,215 @@
+body {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .react-autosuggest__container {
+    //width: calc(100% - 180px);
+    width: calc(100% - 0px);
+    position: relative;
+  }
+  
+  .react-autosuggest__input {
+    width: 240px;
+    height: 30px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  
+  .react-autosuggest__input:focus {
+    outline: none;
+  }
+  
+  .react-autosuggest__container--open .react-autosuggest__input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+  
+  .react-autosuggest__container--open .react-autosuggest__suggestions-container {
+    display: flex;
+    position: absolute;
+    top: 38px;
+    width: 120%;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+
+    @media screen and ( max-width:1095px ) {
+      width: 200%;
+      font-size: 14px;
+    }
+    @media screen and ( max-width:768px ) {
+      width: 110%;
+      font-size: 16px;
+    }
+    @media screen and ( max-width:500px ) {
+      width: 120%;
+      font-size: 14px;
+    }
+    @media screen and ( max-width:375px ) {
+      width: 135%;
+
+    }
+
+  }
+  
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: flex;
+    }
+  }
+  
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .react-autosuggest__suggestion:not(:first-child) {
+    border-top: 1px solid #ddd;
+  }
+  
+  .react-autosuggest__suggestion--focused {
+    background-color: #0C7EAF;
+    color: #fff;
+  }
+  
+  .suggestion-content {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    img {
+      min-width: 40px;
+      min-height: 40px;
+      border-radius: 50%;
+    }
+  }
+  
+  .dancounsell {
+    background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/48.jpg);
+  }
+  
+  .ladylexy {
+    background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/48.jpg);
+  }
+  
+  .mtnmissy {
+    background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/mtnmissy/48.jpg);
+  }
+  
+  .steveodom {
+    background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/steveodom/48.jpg);
+  }
+  
+  .name {
+    margin-bottom: 0px;
+    font-size : 12px;
+    margin-left: 10px;
+    // line-height: 45px;
+  }
+  
+  .highlight {
+    // color: #ee0000;
+    font-weight: bold;
+  }
+  
+  .react-autosuggest__suggestion--focused .highlight {
+    color: #120000;
+  }
+  .react-autosuggest__suggestion a {
+    color: black
+  }
+  .home_search_form {
+    display: flex;
+    align-items: center;
+  }
+  .suggestion-input {
+    width: inherit;
+    border: none;
+    font-size: 15px;
+    padding: 6px 0 6px 8px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  .suggestion-input:focus {
+    outline:none;
+  }
+  .suggestion-title {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  //   white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis
+  }
+  .suggestion-detail {
+    line-height: 20px;
+  }
+  .react-autosuggest__section-title {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .search-navbar-form{
+    width: 35%;
+    margin: 3px 2% 0 0 ;
+  }
+  .search-input-group{
+    border: 2px solid rgba(135,206,250,0.75);
+    border-radius: 50px;
+    //width: 100%;
+    min-width: 144px;
+  }
+  .search-input-group-btn{
+    width: 4% !important;
+    button{
+      //border: 2px solid rgb(229, 229, 229);
+      color: white;
+      padding: 5px 12px;
+      font-size: 16px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      background: rgba(135,206,250,0.75);
+    }
+    button:hover{
+      background:lightskyblue ;
+      color: white;
+    }
+    button:focus{
+      outline: none;
+    }
+  }
+
+.search-input-group-btn:focus{
+  outline: none;
+}
+  
+@media screen and (max-width: 1278px) {
+    .search-navbar-form {
+      width: 30%;
+    }
+  }
+@media screen and (max-width: 1092px) {
+  .na-brand{
+    width:11%;
+    margin-left: 0.5%;
+  }
+  .search-navbar-form {
+    margin: 2px 0 0 0;
+    width: 25%;
+  }
+}

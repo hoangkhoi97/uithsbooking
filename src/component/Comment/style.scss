@@ -1,0 +1,30 @@
+.comment-rental-container {
+    textarea {
+        height: 220px;
+    }
+}
+.close-img {
+    float: right;
+}
+.modal-content {
+    width: 80%;
+}
+.modal-header {
+    border:0px;
+}
+.comment-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.dv-star-rating-star {
+    i {
+        font-size: 30px;
+    }
+}
+.comment-rental {
+    display: flex !important;
+    flex-direction: row-reverse;
+    justify-content: center;
+}

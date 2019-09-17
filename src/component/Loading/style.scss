@@ -1,0 +1,25 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba( 0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 99999999999;
+  .loadersmall {
+    border: 2px solid #4B0082; /* Light grey */
+    border-bottom: none; /* Blue */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

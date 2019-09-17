@@ -1,0 +1,230 @@
+@mixin borderradius($value,$style,$color,$radius,$height)
+{
+  border: $value $style $color;
+  border-radius: $radius;
+  height: $height;
+}
+
+@mixin border($position,$value,$style,$color)
+{
+  border-#{$position}: $value;
+  border-#{$position}-style: $style;
+  border-#{$position}-color: $color;
+
+}
+%dot{
+  border: 1px solid black ;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  margin: 8px 1px 1px 1px;
+}
+
+/* header top */
+
+header
+{
+  margin-top: 75px;
+}
+.na-brand{
+  width:9.5%;
+  margin-left: 1%;
+}
+
+.navbar-right{
+  margin-right: 0;
+  @media screen and (max-width: 768px ) {
+    float: right;
+  }
+
+  .navbar-right-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .dropdown-menu{
+    font-size: 11px;
+    hr{
+      margin: 2px 0;
+    }
+    li button{
+      border: none;
+      background: white;
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: 400;
+      line-height: 1.42857143;
+      color: #333;
+      white-space: nowrap;
+    }
+  }
+}
+.na-sign-in{
+    background: none;
+    color: #36363a;
+    margin-right: 10px;
+  font-weight: 500;
+}
+.na-sign-in:hover{
+    color: #770077;
+    text-decoration: none;
+}
+.na-sign-in:focus{
+  color:#770077;
+  text-decoration: none;
+}
+
+.na
+{
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
+  margin-bottom: 0;
+  background: rgba(245,245,245,0.98) !important;
+  z-index: 9999;
+  border-bottom: 3px solid #3c84e9;
+  border-radius: 0;
+  .na-item{
+    font-size: 15px;
+    font-weight: normal;
+    color: black !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-bottom: 3px solid rgba(245,245,245,0.98) ;
+    @media screen and (max-width: 1278px ) {
+      font-size: 14px;
+      text-align: center;
+      margin-right: 8px;
+    }
+    @media screen and (max-width: 996px ) {
+      font-size: 12px;
+      text-align: center;
+      margin-right: 0;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    @media screen and (max-width: 768px ) {
+      text-align: center;
+      font-size: 16px;
+    }
+    @media screen and( min-width: 1600px) {
+      font-size: 18px;
+    }
+  }
+  .na-item:focus {
+    background: none!important;
+    border:none;
+    border-bottom: 3px dotted purple !important;
+    outline: none;
+  }
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background: none!important;
+  }
+  .nav>li>ul>li>a{
+    @media screen and (max-width: 768px ) {
+      text-align: center;
+      color: black !important;
+
+    }
+  }
+  .na-item:hover{
+    transition: all 1s;
+    background: none!important;
+    border-bottom: 3px dotted purple !important;
+  }
+
+  .na-item:focus{
+    text-decoration: none;
+  }
+  .na-item:active{
+
+    background: none!important;
+    border-bottom: 3px dotted purple !important;
+    a:active{
+      text-decoration: none;
+    }
+  }
+  .na-right{
+    margin-top: 10px;
+    vertical-align: baseline;
+
+    @media screen and (max-width: 787px) {
+      margin-right: auto;
+    }
+    @media screen and( min-width: 1600px) {
+      margin-top: 15px;
+    }
+  }
+
+  .na-toggle{
+    float: left;
+    margin: 0 5px 0 0;
+    border: 2px solid black;
+    @media screen and (max-width: 367px ) {
+      margin-top: 2px;
+    }
+  }
+}
+
+/* //navigation */
+
+/* //header */
+
+
+select option[disabled]:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 1278px) {
+  .na-sign-in{
+    font-size: 13px;
+    margin-right: 8px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  .na-brand{
+    width:11%;
+    margin-left: 0.5%;
+    margin-top: 1%;
+  }
+  .na-sign-in{
+    font-size: 12px;
+    margin-right: 3px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 822px) {
+  .na {
+    .na-item {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .na-brand{
+    width:17% !important;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .na-brand{
+    width:25% !important;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .na-brand{
+    width:35% !important;
+    margin-top: 2%;
+  }
+}
+

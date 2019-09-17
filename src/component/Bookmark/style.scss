@@ -1,0 +1,78 @@
+#bookmark-container {
+    position: absolute;
+    right: 18px;
+    top:18px;
+    .bookmark-btn {
+    border: 1px solid #e1e5eb;
+    border-radius: .25rem;
+    background-color: #fff;
+    }
+    .bookmark-img {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 4px !important;
+        padding: 2px;
+    }
+}
+.bookmark-history-container {
+    margin: 0 auto;
+    max-width: 928px;
+    padding-bottom: 40px;
+    .bookmark-history-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .bookmark-history-content {
+        border-radius: 8px;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        height: fit-content;
+        a {
+            text-decoration: none;
+            color:#53525a;
+
+        }
+    
+    }
+}
+.bookmark-cell-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    .bookmark-cell-image{
+        padding: 8px 16px 8px 16px;
+        img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .rental-tile {
+        color:#53525a;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .bookmark-total-price{
+        margin-left: auto;
+        margin-right: 16px;
+        border-radius: 8px;
+        padding: 7px 7px 7px 7px;
+        width: 16%
+        
+    }
+    .paid {
+        background-color: green;
+    }
+    .pending {
+        background-color: red;
+    }
+    .bookmark-total-price > p {
+        text-align: center;
+    }
+}
+.user-bookmark-history {
+    min-height: calc(100vh - 40px)
+}
